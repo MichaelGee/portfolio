@@ -1,0 +1,64 @@
+// CSS RULES
+
+$firstBlue: #1F2334;
+$secondBlue: #24283B;
+$thridBlue: #1E2233;
+$footerBlue: #2F3A50;
+$yellow: #FFCE8A;
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+.navbar{
+  background-color: $firstBlue;
+  a{
+    color:white !important;
+  }
+}
+.banner{
+  background-color: $firstBlue;
+  padding: 0rem 3rem;
+  color: white; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .text{
+    margin: 0 auto;
+    h1{
+      font-size: 4rem;
+    }
+  }
+  .banner-image{
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg{
+      width: 60%;
+    }
+  }
+}
+.about{
+  background-color: $secondBlue;
+  padding: 1rem 1.5rem;
+  color: white; 
+  margin: 0 auto;
+  width: 100%;
+}
+.project{
+
+}
+.contact{
+  background-color: $thridBlue;
+  padding: 1rem 1.5rem;
+  margin: 0 auto;
+  width: 100%;   
+}
+
+.footer{
+  background-color: $footerBlue;
+  padding: 1rem 1.5rem; 
+}
