@@ -1,25 +1,34 @@
 // CSS RULES
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Subrayada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@669&display=swap');
 
+// Variables
 $firstBlue: #1F2334;
 $secondBlue: #24283B;
-$thridBlue: #1E2233;
+$thirdBlue: #1E2233;
 $footerBlue: #2F3A50;
 $yellow: #FFCE8A;
+$aboutBlue: #303551;
 
 body{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
 }
+//  NAVIGATION BAR
 .navbar{
   background-color: $firstBlue;
   a{
     color:white !important;
   }
 }
+
+
+// BANNER
 .banner{
-  background-color: $firstBlue;
+  background-color: $secondBlue;
   padding: 0rem 3rem;
   color: white; 
   display: flex;
@@ -27,8 +36,12 @@ body{
   justify-content: center;
   .text{
     margin: 0 auto;
+    .first-p{
+      color: $yellow;
+    }
     h1{
       font-size: 4rem;
+      font-family: 'Montserrat Subrayada', sans-serif
     }
   }
   .banner-image{
@@ -41,24 +54,158 @@ body{
     }
   }
 }
+
+
+// ABOUT ME
 .about{
-  background-color: $secondBlue;
-  padding: 1rem 1.5rem;
+  background-color: $firstBlue;
+  padding: 0rem 1.5rem;
   color: white; 
   margin: 0 auto;
-  width: 100%;
-}
-.project{
-
-}
-.contact{
-  background-color: $thridBlue;
-  padding: 1rem 1.5rem;
-  margin: 0 auto;
   width: 100%;   
+      .about-container{
+        background-color: $aboutBlue;
+        width: 70%;
+        margin: 0px auto;
+        padding: 4rem 3rem;
+        display: flex;
+        align-items: center;
+        .about-img{
+          width: 60%;
+          img{
+            width:60%;
+          }
+        }
+        
+        .about-text{
+          text-align: left;
+          color: white;
+          width: 60%;
+          .about-me-head{
+            color: $yellow;
+          }
+          h1{
+            font-family: 'Playfair Display', serif
+          }
+        }
+        .btn{
+          border-color: $yellow;
+          color: $yellow;
+          &:hover{
+            background-color: $yellow !important;
+            color: black !important;
+          }
+        }
+    }
+  
+  
 }
 
+
+// PROJECTS
+.project{
+  background-color: $firstBlue;
+  padding: 6rem 4rem;
+  margin: 0 auto;
+  width: 100%;
+  .projects-container{
+    width:70%;
+    margin:0 auto;
+    .project-header{
+      p{
+        color: $yellow;
+      }
+      h1{
+        color: white;
+        margin-bottom: 1.2rem;
+        font-family: 'Playfair Display', serif;
+      }
+    }
+    .project-cards-container{
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 12px 12px;
+      .card{
+        margin: 0 auto;
+        background-color: $aboutBlue;
+        border-color: $yellow !important;
+        border-radius: 0.4rem;
+        color: white;
+       .card-body{
+        .btn{
+          border-color: $yellow;
+          color: $yellow;
+          &:hover{
+            background-color: $yellow !important;
+            color: black !important;
+          }
+        }
+       }
+      }
+    }
+  }
+}
+
+
+// CONTACTS
+.contact{
+  background-color: $secondBlue;
+  padding: 6rem 4rem;
+  margin: 0 auto;
+  width: 100%; 
+  .card-container{
+    width:70%;
+    margin:0 auto;
+      .contact-header{
+        p{
+          color: $yellow;
+          margin:0;
+        }
+        h1{
+          color: white;
+          font-family: 'Playfair Display', serif;
+          margin-bottom: 1.2rem;
+        }
+      }
+      .cards{
+        width:100%;
+        margin:0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+        gap: 12px 12px;
+        .card{
+          width:100%;
+          background-color: $secondBlue !important;
+          border-color: $yellow !important;
+          border-radius: 0.4rem;
+          color: white;
+          cursor: pointer;
+          .card-body{
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            img{
+              width: 13%;
+            }
+          }
+      }
+  }      
+}
+}
+
+
+// FOOTER
 .footer{
-  background-color: $footerBlue;
+  background-color: $firstBlue;
   padding: 1rem 1.5rem; 
+}
+
+
+
+// MEDIA QUARIES
+@media(max-width: 970px){
+  .about-container{
+    flex-direction: column;
+  }
 }

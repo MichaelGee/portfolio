@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Subrayada&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@669&display=swap");
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .navbar {
@@ -15,7 +18,7 @@ body {
 }
 
 .banner {
-  background-color: #1F2334;
+  background-color: #24283B;
   padding: 0rem 3rem;
   color: white;
   display: -webkit-box;
@@ -33,8 +36,13 @@ body {
   margin: 0 auto;
 }
 
+.banner .text .first-p {
+  color: #FFCE8A;
+}
+
 .banner .text h1 {
   font-size: 4rem;
+  font-family: 'Montserrat Subrayada', sans-serif;
 }
 
 .banner .banner-image {
@@ -55,22 +63,176 @@ body {
 }
 
 .about {
-  background-color: #24283B;
-  padding: 1rem 1.5rem;
+  background-color: #1F2334;
+  padding: 0rem 1.5rem;
   color: white;
   margin: 0 auto;
   width: 100%;
 }
 
-.contact {
-  background-color: #1E2233;
-  padding: 1rem 1.5rem;
+.about .about-container {
+  background-color: #303551;
+  width: 70%;
+  margin: 0px auto;
+  padding: 4rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .about-container .about-img {
+  width: 60%;
+}
+
+.about .about-container .about-img img {
+  width: 60%;
+}
+
+.about .about-container .about-text {
+  text-align: left;
+  color: white;
+  width: 60%;
+}
+
+.about .about-container .about-text .about-me-head {
+  color: #FFCE8A;
+}
+
+.about .about-container .about-text h1 {
+  font-family: 'Playfair Display', serif;
+}
+
+.about .about-container .btn {
+  border-color: #FFCE8A;
+  color: #FFCE8A;
+}
+
+.about .about-container .btn:hover {
+  background-color: #FFCE8A !important;
+  color: black !important;
+}
+
+.project {
+  background-color: #1F2334;
+  padding: 6rem 4rem;
   margin: 0 auto;
   width: 100%;
 }
 
+.project .projects-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.project .projects-container .project-header p {
+  color: #FFCE8A;
+}
+
+.project .projects-container .project-header h1 {
+  color: white;
+  margin-bottom: 1.2rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.project .projects-container .project-cards-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 12px 12px;
+}
+
+.project .projects-container .project-cards-container .card {
+  margin: 0 auto;
+  background-color: #303551;
+  border-color: #FFCE8A !important;
+  border-radius: 0.4rem;
+  color: white;
+}
+
+.project .projects-container .project-cards-container .card .card-body .btn {
+  border-color: #FFCE8A;
+  color: #FFCE8A;
+}
+
+.project .projects-container .project-cards-container .card .card-body .btn:hover {
+  background-color: #FFCE8A !important;
+  color: black !important;
+}
+
+.contact {
+  background-color: #24283B;
+  padding: 6rem 4rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.contact .card-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.contact .card-container .contact-header p {
+  color: #FFCE8A;
+  margin: 0;
+}
+
+.contact .card-container .contact-header h1 {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 1.2rem;
+}
+
+.contact .card-container .cards {
+  width: 100%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(100px, 2fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+  gap: 12px 12px;
+}
+
+.contact .card-container .cards .card {
+  width: 100%;
+  background-color: #24283B !important;
+  border-color: #FFCE8A !important;
+  border-radius: 0.4rem;
+  color: white;
+  cursor: pointer;
+}
+
+.contact .card-container .cards .card .card-body {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact .card-container .cards .card .card-body img {
+  width: 13%;
+}
+
 .footer {
-  background-color: #2F3A50;
+  background-color: #1F2334;
   padding: 1rem 1.5rem;
+}
+
+@media (max-width: 970px) {
+  .about-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=style.css.map */
