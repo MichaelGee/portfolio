@@ -102,6 +102,7 @@ body {
 
 .about .about-container .about-text h1 {
   font-family: 'Playfair Display', serif;
+  font-size: 1.2rem !important;
 }
 
 .about .about-container .btn {
@@ -204,8 +205,8 @@ body {
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(100px, 2fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+  -ms-grid-columns: (minmax(300px, 2fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
   gap: 12px 12px;
 }
 
@@ -317,6 +318,39 @@ body {
   .cards .card .card-body {
     padding: 0.5rem !important;
     font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 412px) {
+  .banner .text h1 {
+    font-size: 1.5rem !important;
+  }
+  .about .about-container .about-text h1 {
+    font-size: 1.2rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .about .about-container .about-text p {
+    font-size: 0.8rem;
+  }
+  .project-cards-container {
+    -ms-grid-columns: (minmax(180px, 2fr))[auto-fit] !important;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 2fr)) !important;
+  }
+  .project-cards-container .card .card-body p {
+    font-size: 0.8rem;
+  }
+  .project-cards-container .card .card-body .card-title {
+    font-size: 1rem;
+  }
+  .project-cards-container .card .card-body .btn {
+    font-size: 0.6rem;
+  }
+  .contact .card-container .cards {
+    -ms-grid-columns: (minmax(180px, 2fr))[auto-fit] !important;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 2fr)) !important;
+  }
+  .contact .card-container .cards .card .card-body img {
+    font-size: 8% !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

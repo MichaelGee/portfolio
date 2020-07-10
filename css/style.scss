@@ -84,7 +84,8 @@ body{
             color: $yellow;
           }
           h1{
-            font-family: 'Playfair Display', serif
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem !important;
           }
         }
         .btn{
@@ -181,7 +182,7 @@ body{
         width:100%;
         margin:0 auto;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
         gap: 12px 12px;
         .card{
           width:100%;
@@ -287,4 +288,59 @@ body{
      }
    }
  }
+}
+
+@media(max-width: 412px){
+  .banner{
+    .text{
+      h1{
+        font-size: 1.5rem !important;
+      }
+    }
+  }
+  .about{
+    .about-container{
+      .about-text{
+        h1{
+          font-size: 1.2rem !important;
+          margin-bottom: 1.5rem !important;
+        }
+        p{
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  .project-cards-container{
+    grid-template-columns: repeat(auto-fit, minmax(180px, 2fr)) !important;
+    .card{
+      .card-body{
+        p{
+          font-size: 0.8rem;
+        }
+        .card-title{
+          font-size: 1rem;
+        }
+        .btn{
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
+
+  .contact{
+    .card-container{
+      .cards{
+        grid-template-columns: repeat(auto-fit, minmax(180px, 2fr)) !important;
+        .card{
+          .card-body{
+            img{
+              font-size: 8% !important;
+            }
+          }
+        }
+      }
+    }
+  }
 }
