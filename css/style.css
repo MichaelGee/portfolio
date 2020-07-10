@@ -102,7 +102,7 @@ body {
 
 .about .about-container .about-text h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 1.2rem !important;
+  margin-bottom: 1.8rem;
 }
 
 .about .about-container .btn {
