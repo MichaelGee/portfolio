@@ -107,11 +107,18 @@ body {
 .about .about-container .btn {
   border-color: #FFCE8A;
   border-radius: 0 !important;
-  color: #FFCE8A;
+}
+
+.about .about-container .btn a {
+  color: #FFCE8A !important;
+  text-decoration: none;
 }
 
 .about .about-container .btn:hover {
   background-color: #FFCE8A !important;
+}
+
+.about .about-container .btn:hover a {
   color: black !important;
 }
 
@@ -152,6 +159,10 @@ body {
   border-color: #FFCE8A !important;
   border-radius: 0rem;
   color: white;
+}
+
+.project .projects-container .project-cards-container .card .card-body .card-title {
+  font-weight: bold;
 }
 
 .project .projects-container .project-cards-container .card .card-body .btn {
@@ -281,6 +292,9 @@ body {
   .about .about-container .about-text {
     width: 100%;
   }
+  .about .about-container .about-text h1 {
+    font-size: 1.95rem;
+  }
   .project {
     padding: 6rem 2.5rem;
   }
@@ -288,7 +302,7 @@ body {
     width: 100% !important;
   }
   .project .projects-container .project-header h1 {
-    font-size: 1.8rem;
+    font-size: 1.95rem;
   }
   svg {
     width: 50% !important;
@@ -298,7 +312,7 @@ body {
     width: 100%;
   }
   .contact .card-container .contact-header h1 {
-    font-size: 1.8rem;
+    font-size: 1.95rem;
   }
   .cards .card .card-body {
     padding: 0.5rem !important;

@@ -90,10 +90,15 @@ body{
         .btn{
           border-color: $yellow;
           border-radius: 0 !important;
-          color: $yellow;
+          a{
+            color: $yellow !important;
+            text-decoration: none;
+          }
           &:hover{
             background-color: $yellow !important;
-            color: black !important;
+            a{
+              color: black !important;
+            }
           }
         }
     }
@@ -133,6 +138,9 @@ body{
         border-radius: 0rem;
         color: white;
        .card-body{
+         .card-title{
+           font-weight: bold;
+         }
         .btn{
           border-color: $yellow;
           color: $yellow;
@@ -240,6 +248,9 @@ body{
       }
       .about-text{
         width:100%;
+        h1{
+          font-size: 1.95rem;
+        }
       }
   }
 } 
@@ -249,7 +260,7 @@ body{
       width:100% !important;
       .project-header{
         h1{
-          font-size: 1.8rem;
+          font-size: 1.95rem;
         }
       }
     }
@@ -263,7 +274,7 @@ body{
      width: 100%;
      .contact-header{
        h1{
-         font-size: 1.8rem;
+         font-size: 1.95rem;
        }
      }
    }
