@@ -210,6 +210,10 @@ body {
   gap: 12px 12px;
 }
 
+.contact .card-container .cards a {
+  text-decoration: none;
+}
+
 .contact .card-container .cards .card {
   width: 100%;
   background-color: #24283B !important;
