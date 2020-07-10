@@ -238,7 +238,7 @@ body {
 }
 
 .contact .card-container .cards .card .card-body img {
-  width: 13%;
+  width: 6% !important;
 }
 
 .footer {
