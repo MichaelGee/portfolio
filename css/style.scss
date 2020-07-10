@@ -290,7 +290,7 @@ body{
  }
 }
 
-@media(max-width: 412px){
+@media(max-width: 420px){
   .banner{
     .text{
       h1{
@@ -307,6 +307,9 @@ body{
         }
         p{
           font-size: 0.8rem;
+        }
+        .btn{
+          font-size: 0.6rem;
         }
       }
     }

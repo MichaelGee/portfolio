@@ -321,7 +321,7 @@ body {
   }
 }
 
-@media (max-width: 412px) {
+@media (max-width: 420px) {
   .banner .text h1 {
     font-size: 1.5rem !important;
   }
@@ -331,6 +331,9 @@ body {
   }
   .about .about-container .about-text p {
     font-size: 0.8rem;
+  }
+  .about .about-container .about-text .btn {
+    font-size: 0.6rem;
   }
   .project-cards-container {
     -ms-grid-columns: (minmax(180px, 2fr))[auto-fit] !important;
