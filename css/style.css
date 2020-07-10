@@ -41,12 +41,11 @@ body {
 }
 
 .banner .text h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-family: 'Montserrat Subrayada', sans-serif;
 }
 
 .banner .banner-image {
-  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,7 +58,7 @@ body {
 }
 
 .banner .banner-image svg {
-  width: 60%;
+  width: 70%;
 }
 
 .about {
@@ -107,6 +106,7 @@ body {
 
 .about .about-container .btn {
   border-color: #FFCE8A;
+  border-radius: 0 !important;
   color: #FFCE8A;
 }
 
@@ -129,11 +129,12 @@ body {
 
 .project .projects-container .project-header p {
   color: #FFCE8A;
+  margin: 0;
 }
 
 .project .projects-container .project-header h1 {
   color: white;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.4rem;
   font-family: 'Playfair Display', serif;
 }
 
@@ -149,13 +150,14 @@ body {
   margin: 0 auto;
   background-color: #303551;
   border-color: #FFCE8A !important;
-  border-radius: 0.4rem;
+  border-radius: 0rem;
   color: white;
 }
 
 .project .projects-container .project-cards-container .card .card-body .btn {
   border-color: #FFCE8A;
   color: #FFCE8A;
+  border-radius: 0 !important;
 }
 
 .project .projects-container .project-cards-container .card .card-body .btn:hover {
@@ -200,9 +202,14 @@ body {
   width: 100%;
   background-color: #24283B !important;
   border-color: #FFCE8A !important;
-  border-radius: 0.4rem;
+  border-radius: 0rem;
   color: white;
   cursor: pointer;
+}
+
+.contact .card-container .cards .card:hover {
+  background-color: #FFCE8A !important;
+  color: black !important;
 }
 
 .contact .card-container .cards .card .card-body {
@@ -224,15 +231,78 @@ body {
 
 .footer {
   background-color: #1F2334;
-  padding: 1rem 1.5rem;
+  padding: 2rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+.footer p {
+  margin: 0;
 }
 
 @media (max-width: 970px) {
-  .about-container {
+  .banner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding-top: 7rem;
+  }
+  .banner .banner-image {
+    margin: 3rem 0;
+  }
+  .banner h1 {
+    font-size: 1.5rem;
+  }
+  .about {
+    padding: 0;
+  }
+  .about .about-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .about .about-container .about-img {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .about .about-container .about-text {
+    width: 100%;
+  }
+  .project {
+    padding: 6rem 2.5rem;
+  }
+  .project .projects-container {
+    width: 100% !important;
+  }
+  .project .projects-container .project-header h1 {
+    font-size: 1.8rem;
+  }
+  svg {
+    width: 50% !important;
+    height: 50%;
+  }
+  .contact .card-container {
+    width: 100%;
+  }
+  .contact .card-container .contact-header h1 {
+    font-size: 1.8rem;
+  }
+  .cards .card .card-body {
+    padding: 0.5rem !important;
+    font-size: 0.7rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

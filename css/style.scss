@@ -40,17 +40,16 @@ body{
       color: $yellow;
     }
     h1{
-      font-size: 4rem;
+      font-size: 3.5rem;
       font-family: 'Montserrat Subrayada', sans-serif
     }
   }
   .banner-image{
-    width:50%;
     display: flex;
     align-items: center;
     justify-content: center;
     svg{
-      width: 60%;
+      width: 70%;
     }
   }
 }
@@ -90,6 +89,7 @@ body{
         }
         .btn{
           border-color: $yellow;
+          border-radius: 0 !important;
           color: $yellow;
           &:hover{
             background-color: $yellow !important;
@@ -114,10 +114,11 @@ body{
     .project-header{
       p{
         color: $yellow;
+        margin:0;
       }
       h1{
         color: white;
-        margin-bottom: 1.2rem;
+        margin-bottom: 1.4rem;
         font-family: 'Playfair Display', serif;
       }
     }
@@ -129,12 +130,13 @@ body{
         margin: 0 auto;
         background-color: $aboutBlue;
         border-color: $yellow !important;
-        border-radius: 0.4rem;
+        border-radius: 0rem;
         color: white;
        .card-body{
         .btn{
           border-color: $yellow;
           color: $yellow;
+          border-radius: 0 !important;
           &:hover{
             background-color: $yellow !important;
             color: black !important;
@@ -177,8 +179,12 @@ body{
           width:100%;
           background-color: $secondBlue !important;
           border-color: $yellow !important;
-          border-radius: 0.4rem;
+          border-radius: 0rem;
           color: white;
+          &:hover{
+            background-color: $yellow !important;
+            color: black !important;
+          }
           cursor: pointer;
           .card-body{
             padding: 1rem;
@@ -198,14 +204,76 @@ body{
 // FOOTER
 .footer{
   background-color: $firstBlue;
-  padding: 1rem 1.5rem; 
+  padding: 2rem 1.5rem; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  p{
+    margin: 0;
+  }
 }
 
 
 
 // MEDIA QUARIES
 @media(max-width: 970px){
-  .about-container{
+  .banner{
     flex-direction: column;
+    align-content: center;
+    padding-top: 7rem;
+    .banner-image{
+      margin: 3rem 0;
+    }
+    h1{
+      font-size: 1.5rem;
+    }
   }
+  .about{
+    padding: 0;
+    .about-container{
+      flex-direction: column;
+      width: 100%;
+      .about-img{
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      .about-text{
+        width:100%;
+      }
+  }
+} 
+  .project{
+    padding: 6rem 2.5rem;
+    .projects-container{
+      width:100% !important;
+      .project-header{
+        h1{
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+  svg{
+    width: 50% !important;
+    height: 50%;
+}
+ .contact{
+   .card-container{
+     width: 100%;
+     .contact-header{
+       h1{
+         font-size: 1.8rem;
+       }
+     }
+   }
+ }
+ .cards{
+   .card{
+     .card-body{
+       padding: 0.5rem !important;
+       font-size: 0.7rem;
+     }
+   }
+ }
 }
