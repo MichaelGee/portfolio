@@ -151,7 +151,7 @@ body {
   display: grid;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 12px 12px;
+  gap: 30px 30px;
 }
 
 .project .projects-container .project-cards-container .card {
